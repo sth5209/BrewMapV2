@@ -53,7 +53,7 @@ $(function() {
       "featureType": "landscape",
       "elementType": "all",
       "stylers": [{
-        "color": "#08304b"
+        "color": "#106A28"
       }]
     }, {
       "featureType": "poi",

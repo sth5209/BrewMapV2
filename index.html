@@ -15,7 +15,7 @@
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper center">
-        <a href="index.html" class="brand-logo">Brew Finder</a>
+        <a href="index.html" class="brand-logo">BrewMap</a>
       </div>
     </nav>
   </div>
@@ -24,26 +24,38 @@
       <div class="col s2 flow-text">
         <form class='valign'>
           <div class="row">
+            <div>
+              <img src="Beer.png" alt="Beer Logo" style="width:150px;height:100px;">
+            </div>
             <div class="col s12 flow-text left-align">
-              Find local breweries wherever you are!
+              Brewery Search
             </div>
             <div class="row">
               <div class="col s12 flow-text black-text">
-                <input id="number" type="number" class='black-text'>
-                <label for="number" class='black-text'>Zip Code</label>
+                <label for="address" class='black-text'>Address</label>
+                <input id="address" type="text" class='black-text'>
+                <label for="city" class='black-text'>City</label>
+                <input id="city" type="text" class='black-text'>
+                <label for="state" class='black-text'>State</label>
+                <input id="state" type="text" class='black-text'>
+                <input type="checkbox" id="radius" name="radius" value="miles">
+                <label for="radius">Radius(mi)</label>
+                <input type="range" id="vol" name="vol" min="0" max="100">
+                <input type="checkbox" id="direction" name="direction" value="miles">
+                <label for="direction">Exact Directions</label>              
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col s12 center">
-              <button id='button' class="btn waves-effect waves-light green darken-2" type="submit">Submit
+              <button id='button' class="btn waves-effect waves-light green darken-2" type="submit">Search
               <i class="material-icons right">send</i>
             </button>
             </div>
           </div>
           <div class="row">
             <div id="slow" class="col s12">
-              Hello World Test
+              Beer is good!
             </div>
           </div>
           <div class="row">
@@ -61,7 +73,7 @@
   <footer class="page-footer ">
     <div class="footer-copyright">
       <div class="container">
-        © 2016 Derek Wierson
+        © 2022 IST 440W Team
       </div>
     </div>
   </footer>
