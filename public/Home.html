@@ -12,10 +12,9 @@
           integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
           crossorigin=""></script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-  <script src="app.js"></script>        
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>        
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/index.css">
   <title>BrewMap</title>
 </head>
 
@@ -25,10 +24,7 @@
       <div class="nav-wrapper center">
         <a href="index.html" class="brand-logo">BrewMap</a>
         <div class="login-container">
-          <a href="Login.html">Login</a>
-        </div>
-        <div class="login-container">
-          <a href="Signup.html">Sign Up</a>
+          <a href="Login.html">Logout</a>
         </div>
       </div>
       
@@ -40,7 +36,7 @@
         <form class='valign'>
           <div class="row">
             <div>
-              <img src="Beer.png" alt="Beer Logo" style="width:150px;height:100px;">
+              <img src="img/Beer.png" alt="Beer Logo" style="width:150px;height:100px;">
             </div>
             <div class="col s12 flow-text left-align">
               Brewery Search
@@ -92,22 +88,8 @@
     </div>
   </footer>
 
-  <script type="text/javascript">
-    var map = L.map('map').setView([40.273, -76.886], 13);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap'}).addTo(map);
-    
-    var circle = L.circle([51.508, -0.11], {
-    color: 'red',
-    fillColor: '#f03',
-    fillOpacity: 0.5,
-    radius: 500
-    }).addTo(map);
+  <script src="js/app.js"></script>
 
-    L.Control.geocoder().addTo(map);    
-
-  </script>
 </body>
 
 </html>
