@@ -1,0 +1,26 @@
+{
+  "name": "loginform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sth5209/BrewMapV2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sth5209/BrewMapV2/issues"
+  },
+  "homepage": "https://github.com/sth5209/BrewMapV2#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express.js": "^1.0.0",
+    "knex": "^2.1.0",
+    "nodemon": "^2.0.19",
+    "pg": "^8.7.3"
+  }
+}
