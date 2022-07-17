@@ -1,4 +1,4 @@
-  let userData = [
+let userData = [
     {
         email: 'sth5209@psu.edu',
         password: '1'
@@ -19,12 +19,12 @@
     var password = document.getElementById("password").value;
     for (let i = 0; i < userData.length; i++){
     if ( email == userData[i].email && password == userData[i].password){
-    alert ("Login successfully");
-    window.location = "Home.html"; // Redirecting to other page.
+    alert ("Email already in use");
     return false;
     }
     else{
-        alert("Incorrect Credentials");
+        alert("Register Successful");
+        window.location = "Home.html"; // Redirecting to other page.
         return false;
     }
 }
